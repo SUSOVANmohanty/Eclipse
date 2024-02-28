@@ -1,0 +1,22 @@
+package Locaters;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+public class ScrollUp_Down {
+
+	public static void main(String[] args) throws InterruptedException {
+	WebDriver driver=new ChromeDriver();
+	driver.get("https://www.oneplus.in/store/phone");
+	JavascriptExecutor je=(JavascriptExecutor)driver;  //type cast of javascriptExcecutor
+	Thread.sleep(2000);
+	je.executeScript("window.scrollBy(0,300)", "");   //method scroll down
+	Thread.sleep(2000);
+	je.executeScript("window.scrollBy(0,-150)", ""); //scrollUp
+	driver.findElement(By.linkText("OnePlus Open"));
+	//je.executeScript("arguments[0].scrollIntoView();", driver.findElement(By.linkText("OnePlus Open")));
+	je.executeScript("window.scrollBy(0,,document.body.scrollHeight)", "");
+    
+	}
+
+}

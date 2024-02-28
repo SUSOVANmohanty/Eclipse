@@ -1,0 +1,23 @@
+package SeleniumProgramm;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class DragAndDrop {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://jqueryui.com/droppable/");
+		Actions a=new Actions(driver);
+		WebElement source=driver.findElement(By.xpath("//p[normalize-space()='Drag me to my target']"));
+		Thread.sleep(2000);
+		WebElement target=driver.findElement(By.xpath("//div[@id='droppable']"));
+		Thread.sleep(2000);
+		a.dragAndDrop(source, target);
+
+	}
+
+}

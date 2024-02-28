@@ -1,0 +1,17 @@
+package DataProvider;
+
+import org.testng.annotations.DataProvider;
+
+public class Data {
+	public void facebook()
+	{
+		System.out.println("facebook");
+	}
+	@DataProvider
+	public Object [][]getData(){
+		Object[][]data=new Object[3][2];
+	}
+		
+	
+
+}

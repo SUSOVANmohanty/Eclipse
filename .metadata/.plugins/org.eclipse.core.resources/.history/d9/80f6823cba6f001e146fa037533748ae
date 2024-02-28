@@ -1,0 +1,56 @@
+package Locaters;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Window_Handel {
+
+	public static void main(String[] args) throws AWTException, InterruptedException {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.amazon.in/");
+		Actions a = new Actions(driver);
+		a.moveToElement(driver.findElement(By.linkText(" Electronics "))).contextClick().build().perform();
+		Robot r = new Robot();
+		r.keyPress(KeyEvent.VK_DOWN);
+		r.keyRelease(KeyEvent.VK_DOWN);
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(3000);
+		a.moveToElement(driver.findElement(By.linkText("Mobiles"))).contextClick().build().perform();
+		r.keyPress(KeyEvent.VK_DOWN);
+		r.keyRelease(KeyEvent.VK_DOWN);
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(3000);
+		a.moveToElement(driver.findElement(By.linkText("Today's Deals"))).contextClick().build().perform();
+		r.keyPress(KeyEvent.VK_DOWN);
+		r.keyRelease(KeyEvent.VK_DOWN);
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(3000);
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String parent = it.next();
+		String child1 = it.next();
+		String child2 = it.next();
+		String child3 = it.next();
+		driver.switchTo().window(parent);
+		System.out.println(driver.getTitle());
+		driver.switchTo().window(child1);
+		System.out.println(driver.getTitle());
+		driver.switchTo().window(child2);
+		System.out.println(driver.getTitle());
+		driver.switchTo().window(child3);
+		System.out.println(driver.getTitle());
+	}
+}

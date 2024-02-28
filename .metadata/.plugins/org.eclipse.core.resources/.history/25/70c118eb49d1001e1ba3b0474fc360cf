@@ -1,0 +1,18 @@
+package Annotation;
+
+public class Social {
+	public void fb()
+	{
+		System.out.println("facebook");
+	}
+	public void telegram()
+	{
+		System.out.println("telegram");
+	}
+	public void insta()
+	{
+		System.out.println("instagram");
+	}
+	
+
+}

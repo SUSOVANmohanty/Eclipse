@@ -1,0 +1,16 @@
+package Myntra_automate;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+public class Myntra2 {
+
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.myntra.com/");
+		Select sc=new Select(driver.findElement(By.xpath("//span[@data-reactid='856']")));
+		sc.selectByVisibleText("Edit Profile");
+
+	}
+
+}

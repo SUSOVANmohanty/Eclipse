@@ -1,0 +1,16 @@
+package SeleniumProgramm;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+public class CheckBox {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://html.form.guide/checkbox/html-form-with-checkbox/");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//p[normalize-space()='Do you want to opt-in for our newsletter?']//input[@type='checkbox']")).click();
+		
+
+	}
+
+}

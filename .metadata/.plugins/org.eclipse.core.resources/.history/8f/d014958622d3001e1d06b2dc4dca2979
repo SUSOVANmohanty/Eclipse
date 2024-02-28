@@ -1,0 +1,23 @@
+package HelperAttribute;
+
+import org.testng.annotations.Test;
+
+public class Laptop {
+	@Test(dependsOnMethods={"idell"})
+	public void ehp()
+	{
+		System.out.println("hp");
+	}
+	@Test
+	public void idell()
+	{
+		System.out.println("idell");
+	}
+	@Test
+	public void iacer()
+	{
+		System.out.println("iacer");
+	}
+
+
+}

@@ -1,0 +1,16 @@
+package Locaters;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+public class Zxc {
+
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//a[contains(@id,'idzhoNx6uw')][1]")).click();
+		driver.findElement(By.cssSelector("#firstname")).sendKeys("Susovan");
+		System.out.println(driver.findElement(By.cssSelector("#firstname")).sendKeys("Susovan"));
+
+	}
+
+}

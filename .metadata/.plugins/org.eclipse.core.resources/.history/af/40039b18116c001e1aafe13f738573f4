@@ -1,0 +1,14 @@
+package Important;
+
+public class Even_1100 {
+
+	public static void main(String[] args) {
+		int a = 1;
+		while (a <= 50) {
+			System.out.println(a * 2);
+			a++;
+		}
+
+	}
+
+}

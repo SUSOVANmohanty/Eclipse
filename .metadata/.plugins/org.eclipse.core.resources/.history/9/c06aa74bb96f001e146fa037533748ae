@@ -1,0 +1,10 @@
+package Locaters;
+
+public class Window_Handel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="TestNG_Intro"/>
+			<item value="Adi"/>
+			<item value="TestNG"/>
+			<item value="Selenium"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="TestNG_Intro"/>
+			<item value="Int"/>
+			<item value="TestNG"/>
+			<item value="Selenium"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\user\eclipse-workspace\TestNG\src\Assertion\Assert.java"/>
+			<item value="C:\Users\user\eclipse-workspace\Salesforce\src\test\java\Salesforce_resources\Salesforceresources.java"/>
+			<item value="C:\Users\user\eclipse-workspace\Salesforce\src\main\java\Salesforce\Salesforce\Salesforcdreuse.java"/>
+			<item value="C:\Users\user\eclipse-workspace\Frameworkfb\src\test\java\FrameWorkfb\Frameworkfb\test.java"/>
+			<item value="C:\Users\user\eclipse-workspace\Frameworkfb\pom.xml"/>
+			<item value="C:\Users\user\eclipse-workspace\Frame\src\main\java\ghgh\child3.java"/>
+			<item value="C:\Users\user\eclipse-workspace\Framework\pom.xml"/>
+			<item value="C:\Users\user\eclipse-workspace\Socialmedia_Automate\src\main\java\Facebook\FB.java"/>
+			<item value="C:\Users\user\eclipse-workspace\Amazon\src\main\java\Amazon\Amazon.java"/>
+			<item value="C:\Users\user\eclipse-workspace\TestNG\src\testNG\E_comm.java"/>
+			<item value="C:\Users\user\eclipse-workspace\LogIn\src\main\java\Locaters\Action_Class.java"/>
+			<item value="C:\Users\user\eclipse-workspace\TestNG\src\testNG\Listener.java"/>
+			<item value="C:\Users\user\eclipse-workspace\JavaBasics\src\Inheritance_intro\Narrow_type.java"/>
+			<item value="C:\Users\user\eclipse-workspace\LogIn\src\main\java\Locaters\Alert.java"/>
+			<item value="C:\Users\user\eclipse-workspace\Test"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="Amazon"/>
+			<item value="Listeners"/>
+			<item value="Assert"/>
+			<item value="CrossBrowser"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Amazon"/>
+			<item value="Listeners"/>
+			<item value="Assert"/>
+			<item value="CrossBrowser"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="529"/>
+		<item key="x" value="443"/>
+		<item key="y" value="0"/>
+	</section>
+</section>

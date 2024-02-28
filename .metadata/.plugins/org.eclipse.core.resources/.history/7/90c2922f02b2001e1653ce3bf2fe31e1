@@ -1,0 +1,10 @@
+package Locaters;
+
+public class ScrollUp_Down {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

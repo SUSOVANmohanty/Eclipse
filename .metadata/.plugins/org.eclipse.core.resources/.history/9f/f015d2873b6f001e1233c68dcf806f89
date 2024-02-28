@@ -1,0 +1,25 @@
+package Locaters;
+
+public class ScreenShot_FB {
+
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://facebook.com/"); 
+		driver.findElement(By.id("email")).sendKeys("abcd");
+		
+	//	import org.openqa.selenium.TakesScreenshot;
+	//	import java.io.File
+	//	import org.apache.commons.io.FileUtils;
+		
+		TakesScreenshot scr=(TakesScreenshot)driver;
+		File source=scr.getScreenshotAs(OutputType.FILE);
+		File dst=new File("C:\\Users\\DELL\\seleniumscreenshot/screen3.png");
+		FileUtils.copyFile(source,dst );
+		
+		
+		
+	}}
+
+	}
+
+}

@@ -1,0 +1,42 @@
+package Prac;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+public class ex {
+		    public static void main(String[] args) {
+		        // Initialize ChromeDriver
+		        WebDriver driver = new ChromeDriver();
+
+		        // Navigate to Google
+		        driver.get("https://www.google.com/");
+
+		        // Find the search input field and send keys
+		        driver.findElement(By.name("q")).sendKeys("ASUS");
+
+		        // Find all the search result elements
+		        List<WebElement> searchResults = driver.findElements(By.className("tF2Cxc"));
+
+		        // Iterate through each search result
+		        for (WebElement result : searchResults) {
+		            // Print the text of the search result
+		            System.out.println(result.getText());
+
+		            // Check if the search result contains specific text
+		            if (result.getText().contains("ASUS TUF Gaming F15 FX506")) {
+		                // Click on the search result if it matches the specific text
+		                result.click();
+		                break;
+		            }
+		        }
+
+		        // Close the browser
+		        driver.quit();
+		    }
+		}
+
+
+}

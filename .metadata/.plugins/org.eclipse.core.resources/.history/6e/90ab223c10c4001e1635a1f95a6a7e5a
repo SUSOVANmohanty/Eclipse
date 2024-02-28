@@ -1,0 +1,47 @@
+package Facebook;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+public class FB {
+
+	public static void main(String[] args) throws InterruptedException, AWTException {
+		WebDriver driver=new ChromeDriver();
+		//Hit the url and login into fb
+		driver.get("https://www.facebook.com/");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("mohantysusovan01@gmail.com");
+		Thread.sleep(1000);
+		driver.findElement(By.name("pass")).sendKeys("bontyp1");
+		Thread.sleep(1000);             
+		driver.findElement(By.name("login")).click();
+		Thread.sleep(12000);
+		//using robot cls for cancel the chrome pop up
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		//using action cls for hover the mouse 
+		driver.findElement(By.xpath("//a[@aria-label='Home']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[contains(text(),\"What's on your mind, Susovan?\")]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector("p[class='xdj266r x11i5rnm xat24cr x1mh8g0r x16tdsg8']")).sendKeys("Hi");
+		
+	
+		
+		
+		
+
+	}
+
+}

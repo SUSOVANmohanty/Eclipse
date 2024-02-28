@@ -1,0 +1,19 @@
+package Important;
+
+import java.util.Scanner;
+
+public class CharasInput {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the Data");
+		char c = s.next().charAt(0);
+		if (c >= 'a' && c <='z') {
+			System.out.println(1);
+		} else if (c >= 'A' && c <= 'Z') {
+			System.out.println(0);
+		} else
+			System.out.println(-1);
+	}
+
+}

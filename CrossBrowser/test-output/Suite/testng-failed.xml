@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="Crossbrowser.CrossBrwsr">
+        <methods>
+          <include name="brwsingchrome"/>
+          <include name="brwsingedge"/>
+        </methods>
+      </class> <!-- Crossbrowser.CrossBrwsr -->
+    </classes>
+  </test> <!-- Edge(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,39 @@
+package ListenersMethod;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Randomly {
+
+public class random {
+	@Test
+	public void Test_Success()
+	{
+		System.out.println("this is my suucess test");
+	}
+	@Test
+	public void Test_Failure()
+	{
+		System.out.println("this is my failure test");
+		Assert.assertTrue(false);
+	}
+	@Test
+	public void Test_Skiped()
+	{
+		System.out.println("this is my skip test");
+	}
+	@Test
+	public void on_Start()
+	{
+		System.out.println("this is my onstart");
+	}
+	@Test
+	public void on_Finish()
+	{
+		System.out.println("this is my onfinish");
+	}
+
+}
+
+
+}

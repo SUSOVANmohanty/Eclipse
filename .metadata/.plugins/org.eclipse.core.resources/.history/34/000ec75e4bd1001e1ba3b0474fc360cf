@@ -1,0 +1,19 @@
+package IncludeExclude;
+
+public class Travel {
+	
+	public void expedia()
+	{
+		System.out.println("expedia");
+	}
+	
+	public void makemytrip()
+	{
+		System.out.println("makemytrip");
+	}
+	public void agoda()
+	{
+		System.out.println("agoda");
+	}
+
+}

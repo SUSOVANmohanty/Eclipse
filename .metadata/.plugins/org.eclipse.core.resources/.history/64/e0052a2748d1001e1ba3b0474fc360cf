@@ -1,0 +1,17 @@
+package Annotation;
+
+public class Shopping {
+	public void messho()
+	{
+		System.out.println("meesho");
+	}
+	public void alibaba()
+	{
+		System.out.println("alibaba");
+	}
+	public void mart()
+	{
+		System.out.println("mart");
+	}
+
+}

@@ -1,0 +1,25 @@
+package Locaters;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+public class Scenario1 {
+
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://magento2-demo.magebit.com/");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//a[contains(@id,'idzhoNx6uw')][1]")).click();
+		driver.findElement(By.cssSelector("#firstname")).sendKeys("Susovan");
+		driver.findElement(By.cssSelector("#lastname")).sendKeys("Mohanty");
+		driver.findElement(By.cssSelector("#is_subscribed")).click();
+		driver.findElement(By.cssSelector("#email_address")).sendKeys("mohantysusovan04@gmail.com");
+		driver.findElement(By.cssSelector("#password")).sendKeys("xyzlelo@4");
+		driver.findElement(By.cssSelector("#password-confirmation")).sendKeys("xyzlelo@4");
+		driver.findElement(By.xpath("//button[@title='Create an Account']")).click();
+		System.out.println();
+		
+		
+
+	}
+
+}

@@ -1,0 +1,38 @@
+package testNG;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class Social_Media {
+	@Test
+	public void fb()
+	{
+		System.out.println("facebook");
+	}
+	@Parameters({"https://www.instagram.com/"})
+	@Test
+	public void insta(String urlname)
+	{
+		Assert.assertEquals(false, false);
+		System.out.println("instagram");
+	}
+	@Test
+	public void wp()
+	{
+		Assert.assertEquals(false, true);
+		System.out.println("whatsapp");
+	}
+	@Test
+	public void tinder()
+	{
+		System.out.println("tinder");
+	}
+	@Test
+	public void bumble()
+	{
+		System.out.println("bumble");
+	}
+
+}

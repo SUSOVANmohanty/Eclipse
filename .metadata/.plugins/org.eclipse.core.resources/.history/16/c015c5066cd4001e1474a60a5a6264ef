@@ -1,0 +1,57 @@
+package AmazonAutomate;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import java.util.List;
+import java.util.Scanner;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+public class Amazon {
+	
+	WebDriver driver=new ChromeDriver();
+	
+	@Test
+	@BeforeTest
+	public void amazonlgin() throws InterruptedException
+	{
+		//click on link put the mandtory credentials 
+		driver.get("https://www.amazon.in/");
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//span[normalize-space()='Account & Lists']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys("mohantysusovan04@gmail.com");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@id='continue']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("Velorant@73");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
+	}
+	//	Scanner s=new Scanner(System.in);
+	//	System.out.println("Enter the OTP here");
+	//	String otp=s.next();
+	//	driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys(otp);
+	//	driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
+		
+		@Test(priority=1)
+		public void search() {	
+		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("Asus Tuf f15 i7");
+		List<WebElement>l=driver.findElements(By.className("s-heavy"));
+		int i=1;
+		for (WebElement g:l)
+		{
+			System.out.println(l.get(i).getText());
+			if(l.get(i).getText().contains(" 12th gen rtx 4060"));
+			{
+				l.get(i).click();
+				break;
+			}
+		
+		}
+		
+	}
+
+}

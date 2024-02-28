@@ -1,0 +1,24 @@
+package SeleniumProgramm;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.JavascriptExecutor;
+
+public class JavaScript {
+
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+		//java script declaration
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("document.getElementById('email').setAttribute('value','Hello')");
+		// to print the value
+		Object s = js.executeScript("return document.getElementById('email').getAttribute('value')");
+		
+		System.out.println(s);
+		// to click login
+		js.executeScript("return document.getElementById('u_0_r').click()");
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package Facebook;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+public class FB {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("mohantysusovan01@gmail.com");
+		Thread.sleep(1000);
+		driver.findElement(By.name("pass")).sendKeys("bontyp1");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@id='pass']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.name("login")).click();
+		
+		Thread.sleep(1000);
+		Actions a=new Actions(driver);
+		a.moveToElement(driver.findElement(By.xpath("//span[@class='x4k7w5x x1h91t0o x1h9r5lt x1jfb8zj xv2umb2 x1beo9mf xaigb6o x12ejxvf x3igimt xarpa2k xedcshv x1lytzrv x1t2pt76 x7ja8zs x1qrby5j']//span//div[@aria-label='Menu']//*[name()='svg']"))).click().build().perform();
+		
+		
+		
+
+	}
+
+}

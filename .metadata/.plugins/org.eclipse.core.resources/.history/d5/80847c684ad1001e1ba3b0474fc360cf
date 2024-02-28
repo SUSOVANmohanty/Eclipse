@@ -1,0 +1,22 @@
+package Annotation;
+
+import org.testng.annotations.Test;
+
+public class Study {
+	@Test
+	public void byju()
+	{
+		System.out.println("byjus");
+	}
+	@Test
+	public void udemy()
+	{
+		System.out.println("udemy");
+	}
+	@Test
+	public void Coursera()
+	{
+		System.out.println("Coursera");
+	}
+
+}

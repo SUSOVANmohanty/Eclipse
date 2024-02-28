@@ -1,0 +1,10 @@
+package Selenium_Program;
+
+public class Implicit_Wait {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

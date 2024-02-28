@@ -1,0 +1,41 @@
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class Mail {
+	@Test
+	public void gmail()
+	{
+		System.out.println("gmail");
+	}
+	@Test
+	public void hotmail()
+	{
+		System.out.println("Hotmail");
+	}
+	@Parameters({"URL"})
+	@Test
+	public void yahoo(String urlname)
+	{
+		System.out.println("Yahoo");
+		System.out.println(urlname);
+	}
+	@Test
+	public void tmail()
+	{
+		System.out.println("Tmail");
+	}
+	@Test
+	public void tyah()
+	{
+		System.out.println("tyah");
+	}
+
+}

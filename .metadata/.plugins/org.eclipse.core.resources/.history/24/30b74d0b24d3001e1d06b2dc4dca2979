@@ -1,0 +1,23 @@
+package HelperAttribute;
+
+import org.testng.annotations.Test;
+
+public class Laptop {
+	@Test(dependsOnMethods= {"dell", "acer"})
+	public void ehp()
+	{
+		System.out.println("hp");
+	}
+	@Test(timeOut=1000)
+	public void dell()
+	{
+		System.out.println("dell");
+	}
+	@Test
+	public void acer()
+	{
+		System.out.println("acer");
+	}
+
+
+}

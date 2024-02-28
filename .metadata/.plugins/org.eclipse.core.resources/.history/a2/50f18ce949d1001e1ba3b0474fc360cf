@@ -1,0 +1,17 @@
+package Annotation;
+
+public class Study {
+	public void byju()
+	{
+		System.out.println("byjus");
+	}
+	public void udemy()
+	{
+		System.out.println("udemy");
+	}
+	public void Coursera()
+	{
+		System.out.println("Coursera");
+	}
+
+}

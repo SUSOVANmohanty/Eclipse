@@ -1,0 +1,10 @@
+package Locaters;
+
+public class Find_Locaters {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
